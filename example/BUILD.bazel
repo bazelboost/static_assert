@@ -1,0 +1,25 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "static_assert_example_1",
+    tags = ["manual"],
+    srcs = ["static_assert_example_1.cpp"],
+    deps = ["//:static_assert"],
+)
+
+cc_binary(
+    name = "static_assert_example_2",
+    tags = ["manual"],
+    srcs = ["static_assert_example_2.cpp"],
+    deps = [
+        "//:static_assert",
+        "@boost//type_traits",
+    ],
+)
+
+cc_binary(
+    name = "static_assert_example_3",
+    tags = ["manual"],
+    srcs = ["static_assert_example_3.cpp"],
+    deps = ["//:static_assert"],
+)

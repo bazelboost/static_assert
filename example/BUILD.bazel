@@ -13,7 +13,7 @@ cc_binary(
     srcs = ["static_assert_example_2.cpp"],
     deps = [
         "//:static_assert",
-        "@boost//type_traits",
+        "@boost//libs/type_traits",
     ],
 )
 

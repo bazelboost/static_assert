@@ -12,6 +12,6 @@ cc_library(
     hdrs = glob(["include/boost/*.hpp"]),
     deps = [
         ":static_assert_internal",
-        "@boost//config",
+        "@boost//libs/config",
     ],
 )
